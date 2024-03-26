@@ -47,6 +47,8 @@ function status_validation(valuess){
     }
 }
 
+
+
 next_2 = document.querySelector('#next_2');
 next_2.addEventListener('click', ()=>{
     
@@ -80,24 +82,38 @@ next_2.addEventListener('click', ()=>{
 })
 
 
-back_2 = document.querySelector('#back_2') ;
-back_2.addEventListener('click', ()=>{
+back_2_ss = document.querySelector('#back_2_ss') ;
+back_2_ss.addEventListener('click', ()=>{
     // toggle to inactive 
     form_3_single.classList.toggle('inactive')
     // toggle to active
-    form_2.classList.toggle('inactive')     
+    form_2.classList.toggle('inactive')    
+    console.log('checkings'); 
 })
 
-
-back_3 = document.querySelector('#back_3') 
-back_3.addEventListener('click' , ()=>{
-    //toggle to inactive 
-    if(valuess == "single"){
-        form_3_single.classList.toggle('inactive');         
-    } else {
-        form_3_double.classList.toggle('inactive');
-    }
+back_2_dd = document.querySelector('#back_2_dd') ;
+back_2_dd.addEventListener('click', ()=>{
+    // toggle to inactive 
+    form_3_double.classList.toggle('inactive')
     // toggle to active
-})
+    form_2.classList.toggle('inactive')    
+    console.log('checkings'); 
+}) 
+
+
+
+
+
+
+// back_3 = document.querySelector('#back_3') 
+// back_3.addEventListener('click' , ()=>{
+//     //toggle to inactive 
+//     if(valuess == "single"){
+//         form_3_single.classList.toggle('inactive');         
+//     } else {
+//         form_3_double.classList.toggle('inactive');
+//     }
+//     // toggle to active
+// })
 
 
