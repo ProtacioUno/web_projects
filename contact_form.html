@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="src/contact_form.css">
+    <title>Form contact</title>
+    
+</head>
+<body>
+    
+    <section id="block_1"> 
+        <div id="sub" class="container "> 
+            <div class="row">
+                <h1>   Contact Information </h1>
+            </div>
+            <div class="row">   
+
+
+                
+                <form class="card" method="POST" action="">
+                    <h5 class="card-header">Personal information</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    
+                     <div class="row"> 
+                        <div class="col-md-2 d-flex flex-column justify-content-around">  
+                            <div id="step-1" class="circle">1</div>
+                            <div id="step-2" class="circle">2</div>
+                            <div id="step-3" class="circle">3</div>
+                         </div>                   
+                        <div class="col-md-10" id="form_1">  
+                            <div class="row"> 
+                                <label for="last" class="col-md-3 mb-2"> Last name </label>
+                                <input id="last" class="col-md-9 mb-2" >  
+                                <label for="first" class="col-md-3 mb-2"> First name </label>
+                                <input id="first" class="col-md-9 mb-2">  
+                                <label for="middle" class="col-md-3 mb-2"> Middle name </label>
+                                <input id="middle" class="col-md-9 mb-2">  
+                            </div>  
+                            <div class="row mb-2">
+                                <label for="tin" class="col-md-3"> TIN number </label>     
+                                <input type="input" class="col-2">
+                                <input type="input" class="col-2">
+                                <input type="input" class="col-2">
+                                <input type="input" class="col-3">
+                            </div>
+                            <div class="row"> 
+                                <label for="contact" class="col-md-3 mb-2"> Contact </label>
+                                <input id="contact" class="col-md-9 mb-2">  
+                                <label for="email" class="col-md-3 mb-2"> Email address </label>
+                                <input id="email" class="col-md-9 mb-2">  
+                            </div>
+                            <div class="row d-flex justify-content-end">
+                                <a href="#" class="btn btn-primary col-md-3" name="next_1" id="next_1"> Next</a>
+                            </div>
+                        </div>   
+                         <div class="col-md-10 inactive" id="form_2"> 
+                            <div class="row g-3">
+                                <div class="col-md-6"> 
+                                    <input type="radio" class="btn-check" name="status" id="single" autocomplete="off" checked value="single">
+                                    <label class="btn btn-outline-primary col-12" for="single"> Single </label>
+                                </div>
+                                
+                                <div class="col-md-6 col-12">                                    
+                                    <input type="radio" class="btn-check" name="status" id="married" autocomplete="off" value="married">
+                                    <label class="btn btn-outline-primary col-12" for="married"> Married</label>
+                                </div>
+
+                                <div class="col-md-6 col-12">                                    
+                                    <input type="radio" class="btn-check" name="status" id="divorce" autocomplete="off" value="divorse">
+                                    <label class="btn btn-outline-primary col-12" id="divorce" for="divorce"> Divorced </label>
+                                </div>
+                            
+                                <div class="col-md-6">                                    
+                                    <input type="radio" class="btn-check" name="status" id="widowed" autocomplete="off"  value="widowed"> 
+                                    <label class="btn btn-outline-primary col-12" for="widowed"> Widowed </label>
+                                </div>
+                                <div class="col-md-6">                                    
+                                    <input type="radio" class="btn-check" name="status" id="seperated" autocomplete="off" value="seperated">
+                                    <label class="btn btn-outline-primary col-12" for="seperated"> Seperatedd </label>
+                                </div>
+                                 
+            
+                            </div> 
+                             <div class="row d-flex justify-content-around mt-5" >
+                                <input class="btn btn_primary col-md-3" type="button" name="back_1" id="back_1" value="Back">
+                                <input class="btn btn-primary col-md-3" type="button" name="next_2" id="next_2" value="Next">
+                              </div>
+
+                         </div>
+
+                        
+                            <!-- IFF SINGLEEEEE -->
+                        <div class="col-md-10 inactive" id="form_3_single"> 
+                            <div class="row">
+                                <h1> single content</h1>
+                                <label for="moms" class="col-md-3 mb-2"> Mother's name</label> 
+                                <input id="moms" class="col-md-9 mb-2"  name="moms">  
+                                <label for="moms" class="col-md-3 mb-2"> Mother's name</label>
+                                <input id="moms" class="col-md-9 mb-2"  name="moms">                                                                  
+                            </div>       
+
+                            <div class="row d-flex justify-content-around mt-5" >
+                                <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2" value="Back">
+                                <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
+                            </div>                                                         
+
+                            
+                        </div> 
+                        
+                        <div class="col-md-10 inactive" id="form_3_married"> 
+                            <div class="row">
+                                <h1> Married </h1>  
+
+                                <!-- <div class="row"> -->                                                                
+                                    <label for="moms" class="col-md-3 mb-2"> Mother's name</label> 
+                                    <input id="moms" class="col-md-9 mb-2"  name="moms">  
+                                    <label for="moms" class="col-md-3 mb-2"> Father's name</label>
+                                    <input id="moms" class="col-md-9 mb-2"  name="moms">                                                                  
+                                </div> 
+                                 <div class="row"> 
+                                     <label for="spos" class="col-md-3 mb-2"> Spouse's name</label> 
+                                    <input id="spos" class="col-md-9 mb-2"  name="spos">  
+
+                                    <label for="tin" class="col-md-3"> TIN number </label>     
+                                        <input type="input" class="col-2">
+                                        <input type="input" class="col-2">
+                                        <input type="input" class="col-2">
+                                        <input type="input" class="col-3"> 
+                                 </div> 
+
+                                 <div class="row d-flex justify-content-around mt-5" >
+                                    <input class="btn btn_primary col-md-3" type="button" name="back_3" id="back_3" value="Back">
+                                    <input class="btn btn-primary col-md-3" type="button" name="next_4" id="next_4 " value="Next">
+                                </div>     
+
+                                
+                            </div>
+                        </div>
+                                        
+                     </div>
+                    </div>
+                </form>
+                  
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="src/main.js"> </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+:root {
+    --circle : rgb(227, 236, 243) ; 
+}
+
+.circle {
+    border:  8px solid var(--circle);
+    border-radius:  50%; 
+    width: 70px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    color :  var(--circle) ; 
+    font-weight: bolder ;
+} 
+
+
+.inactive {
+    display: none;
+}
+
+
