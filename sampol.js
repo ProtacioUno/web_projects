@@ -33,27 +33,31 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
                 // console.log(person1);
                 // console.log(person2.name);
                 // console.log(person3);                
-    console.log(data);             
-    console.log(Object.keys(data));             
-    let firstt = Object.keys(data)
-    console.log(typeof data);                     
-    let ul = document.querySelector('ul');      
+    // console.log(data);             
+    // console.log(Object.keys(data));             
+    // let firstt = Object.keys(data)
+    // console.log(typeof data);                     
+    // let ul = document.querySelector('ul');      
     
     // li.textContent = 'First item' ; 
     // ul.append(li); 
     
-    firstt.forEach(titles => {      
-        // console.log(titles);                 
-        let li = document.createElement('li');  
-        li.textContent = titles ;         
-        // console.log(ul.childElementCount)
-        ul.appendChild(li);                  
-    }); 
+    // firstt.forEach(titles => {      
+    //     // console.log(titles);                 
+    //     let li = document.createElement('li');  
+    //     li.textContent = titles ;         
+    //     // console.log(ul.childElementCount)
+    //     ul.appendChild(li);                  
+    // }); 
 
     // firstt.forEach(x => {
     //     // let li_  x = "sampoink" ;          
     // })
-    let numberOfItems = 3 ; 
+    // let numberOfItems = 3 ; 
+
+    let valus = Object.values(data) 
+
+    console.log(Object.values(valus[0].color)) ; 
 
     // for (let i = 0; i < numberOfItems; i++) {
         // Create a new list item element

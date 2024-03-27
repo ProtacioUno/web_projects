@@ -9,20 +9,30 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
     // dropdown.innerHTML = '';
     
     
-    console.log(Object.keys(data)); 
+    // console.log(data.region_name)
+    // console.log(Object.keys(data.region_name)); 
+    console.log(Object.keys(data).region_name); 
+    console.log(Object.keys(data)[0][region_name]); 
+    
+    // console.log(data[region_nam])
+    // console.log(Object.keys(data)[0][]); 
+    // console.log(
+    // console.log(Object.keys(data).region_name); 
     
 
     let province = Object.keys(data); 
     // let ul = document.querySelector('ul#province'); 
-    let ul = document.querySelector('ul#dropdown-menu'); 
+    let slect = document.querySelector('select#provc_select'); 
+    
 
     province.forEach(provc =>{
-        let li  = document.createElement('li');
-        let a  = document.createElement('a')                 
-        li.appendChild(a); 
-        a.textContent = provc ; 
-        a.classList.add('dropdown-item') ;
-        ul.appendChild(li);     
+        let option  = document.createElement('option');
+        // let a  = document.createElement('a')                 
+        option.textContent = provc ; 
+        
+        // option.classList.add('dropdown-item') ; 
+        slect.appendChild(option);  
+        // ul.appendChild(li);   
                 
     }) 
     // data.forEach(item => { 
