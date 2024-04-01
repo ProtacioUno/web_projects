@@ -41,7 +41,7 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
         
         
         // console.log()
-        let enpot = "person3" ; 
+        let enpot = "person2" ; 
         let enpot_2 = "color" ; 
         let color_type = "primary"
         let color_selected = "pink" ; 
@@ -57,19 +57,36 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
             // colorsxx.forEach(colorhue )
             // console.log(colorxx);
             
-            // console.log(colorxx.primary);
             
             let color_keys = Object.keys(colorxx)
-            console.log(color_keys)
-            //  Array [ "primary", "secondary" ]
+            let color_vals = Object.values(colorxx)
+
+            console.log("color_keys" , color_keys) 
+                    
+            console.log("color_vals" , color_vals)  
+                //  Array [ "primary", "secondary" ]
+                
+
+            // console.log(colorxx.color_type);                                  
+                // Object { green: "#008000", purple: "#800080", pink: "#FFC0CB", cyan: "#00FFFF" } 
+
+
+            // console.log(color_vals) 
+            
 
         
 
-            // colorxx.forEach((coloxx, xx)=>{
-            //     console.log(colorxx)
-            //     // if(color_type == col)
-            //     // console.log
-            // })
+            color_keys.forEach((colors, xx)=>{
+                if(color_type == colors){
+                    console.log(color_keys[xx]);
+                    console.log("colors_valx[x]x" , color_vals[xx]);
+                    
+                    // console.log(xx)
+                }
+                // console.log(colors) 
+                // if(color_type == col)
+                // console.log
+            })
             
             // return colors.color ; 
         }
@@ -89,13 +106,15 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
                 
                 // console.log(data_selectname.color) 
                 object_color(data_selectname)
+                let sampol = data_selectname.color ;
+                let sampol_key = Object.keys(sampol) ; 
+                console.log( "sampoink", sampol_key);
+                
+                // console.log(sampol)
                 // conseol 
                 // break ;
                 
-                
-                
-                
-                
+                                                                
             }
         })
      
