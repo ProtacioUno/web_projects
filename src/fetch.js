@@ -17,7 +17,7 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
             let option = document.createElement('option'); 
             option.setAttribute('values' ,  index) ;
             option.textContent = name_lest ; 
-            console.log(name_lest);
+            // console.log(name_lest);
             parent_div.appendChild(option) ;
             // parent_div.appendChild(name_lest); 
             // prov_select
@@ -48,9 +48,7 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
 
     
     prov_select.addEventListener('change' ,()=>{
-        // console.log('it change') 
-        
-        
+        // console.log('it change')         
             // selecting REGION
         let prov_val = prov_select.value ;
         console.log("Selected REgion " + prov_val );  
@@ -83,41 +81,112 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
         // console.log(prov_);  
         // console.log(`this is data VAL ${data_val}`);     
         data_val.forEach((obj_province , index) =>{
-        
-            
-            
-            
-            
+          
             // while(region_district.firstChild){
                 //     region_district.removeChild(region_district.firstChild);
         // }
             // console.log(obj_province.region_name )
+            
             if (prov_val == obj_province.region_name){
                 // console.log(obj_province.province_list); 
                 // console.log(Object.values(obj_province.province_list)); 
                 // console.log(Object.keys (obj_province.province_list)); 
-                let province_list = Object.keys(obj_province.province_list) ; 
-            
+                let province_lists = Object.keys(obj_province.province_list) ; 
+                let province_valsss = Object.values(obj_province.province_list) ; 
+                // console.log("vallsss" , province_valsss.municipality_list);
+                console.log("municipality" , province_valsss[0]);
+                console.log("municipality objt" , Object.values(province_valsss[0]));
+                console.log("municipality keys" , Object.values(Object.values(province_valsss)));
+                console.log("municipality keys with [0]" , Object.values(Object.values(province_valsss[1])));
+                // console.log("municipality keys" , Object.values(province_valsss[0]).municipality_list);
+                // console.log("municipality keys" , Object.values(province_valsss[0]).municipality_list);
+               
                 // console.log(`province list ${province_list}`) ; 
                 // province_list.forEach(prov_list => { 
                     //     let option_district =  document.createElement('option');                
-                //     option_district.text = prov_list ; 
-                //     region_district.appendChild(option_district);
-                
+                    //     option_district.text = prov_list ; 
+                    //     region_district.appendChild(option_district);                                                    
+                    // })
+                    
+                    element_add(province_lists ,  region_district); 
+                                                    
+                    region_district.addEventListener('change', ()=>{
+
+                        let district_val = region_district.value ;            
+                        // console.log("distict_val in form :", region_district.value) ;
+                        
+                        let District = Object.values(province_lists) ;
+                        // console.log("District vals from object" , District); 
+                        
+                        // [Distirct1 , district2 , distric3]
+                        District.forEach(distri =>{
+                            
+                            
+                            if(district_val == distri) { 
+                                
+                                province_valsss.forEach( provs_vals =>{
+                                    console.log(provs_vals)   
+                                    console.log(Object.values(provs_vals))   
+                                    
+                                } )
+                                                                
+                                // console.log(District.municipality_list)
+                                // console.log(Object.values(distri))
+                                // console.log(District[0])
+                                // region_district[]                                
+                                // return list of provinct
+                                // console.log(province_lists)                                                               
+                            }
+                            // console.log( "Distrcit", municipal); 
+                            
+                        })
+                        // if(district_val == )
+                        
+
+
+                        
+                        
+                        
+                    })
                     
                     
-                // })
-
-                element_add(province_list ,  region_district); 
-                
-                
-            }
-        }) 
-      
-
+                }
+            }) 
+            
+            
+        })
         
-    })
-    
+    //     region_district.addEventListener('change', ()=>{
+            
+    //         let district_val = region_district.value ;            
+    //         console.log("distict_val ", region_district.value) ;
+            
+    //         // console.log(data_val) ;
+            
+    //         data_val.forEach((obj_province , index) =>{                  
+    //             console.log("obg_province", Object.values(obj_province.province_list)) 
+    //             console.log("provice_list", obj_province.province_list) 
+    //             console.log("provice_list", Object.keys(obj_province.province_list)) 
+
+                
+                                
+    //             // console.log("kes", Object.values(obj_province). ) 
+                
+    //             // if(district_val ==  obj_province.province_list){
+    //             //     console.log("it work")
+    //             // } 
+    //         })
+    //         // let province_list = Object.keys(obj_province.province_list) ; 
+        
+    //     // IF(district_val == prov_lsit)
+        
+    //     // console.log( "prov_list", province_list) 
+        
+
+    // })
+
+
+
     // console.log(prov_select); 
     
     // console.log()
