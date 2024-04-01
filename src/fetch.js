@@ -48,34 +48,43 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
 
     
     prov_select.addEventListener('change' ,()=>{
-        // console.log('it change')
+        // console.log('it change') 
+        
         
             // selecting REGION
         let prov_val = prov_select.value ;
         console.log("Selected REgion " + prov_val );  
             // PARENT DIV of district 
         let region_district = document.querySelector('#region_district'); 
-        
 
-        
+        if( region_district.length > 0 ){                
+            console.log('yes it has');
+            console.log(region_district.length); 
+            // must remote all child elements
+             
+            while(region_district.firstChild){
+                region_district.firstChild.remove();
+                console.log("remove");
+            } 
+            // if(region_district.firstChild){
+                //  console.log("it exist"); 
+            // } else {
+            
+            // }            
+            // console.log(`first childs ${region_district.firstChild}`)
+            // console.log(region_district)            
+        } else {
+            console.log('nones ! ');
+            // console.log(region_district.length); 
+            console.log(region_district)
+        }
+
         
         // console.log(prov_);  
-        // console.log(data_val); 
-
-        
-        a 
-        
+        // console.log(`this is data VAL ${data_val}`);     
         data_val.forEach((obj_province , index) =>{
         
             
-            // if( 0 < region_district.length ){                
-            //     console.log('yes it has');
-            //     console.log(region_district.length);
-                
-            // } else {
-            //     console.log('nones ! ');
-            //     console.log(region_district.length);
-            // }
             
             
             
@@ -89,7 +98,7 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
                 // console.log(Object.keys (obj_province.province_list)); 
                 let province_list = Object.keys(obj_province.province_list) ; 
             
-                console.log(province_list) 
+                // console.log(`province list ${province_list}`) ; 
                 // province_list.forEach(prov_list => { 
                     //     let option_district =  document.createElement('option');                
                 //     option_district.text = prov_list ; 
@@ -97,39 +106,15 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
                 
                     
                     
-                    
                 // })
 
                 element_add(province_list ,  region_district); 
                 
                 
-                // console.log(region_district)
-                
-                // break ;
             }
         }) 
-        // console.log(data_val[0].region_name); 
-        // console.log(data_keys);  
-        
-        // let province_list = data[0].region_nam
-        // console.log(data_val[1]) ;
-        // console.log(province_list);
-        
-            // selecting region name then if
-        // let prov_if = Object.values(data)[0].region_name ; 
-        // console.log(zrov_if);
-        // console.log(Object.values(data)[0].region_name)
-        // prov_if.forEach((prov_f , index) => {
-            // if(prov_f == prov_val){
-        //         console.log(prov_f) ;
-        //         console.log(index) ;
-        //         break  ;
+      
 
-            // }
-        // }) 
-        // if()
-
-        
         
     })
     
