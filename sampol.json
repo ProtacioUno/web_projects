@@ -1,0 +1,32 @@
+
+
+
+{
+    "person1": {
+        "name": "John",
+        "age": 30,
+        "city": "New York",
+        "color": {
+            "primary": "blue",
+            "secondary": "white"
+        }
+    },
+    "person2": {
+        "name": "Alice",
+        "age": 25,
+        "city": "Los Angeles",
+        "color": {
+            "primary": "red",
+            "secondary": "black"
+        }
+    },
+    "person3": {
+        "name": "Michael",
+        "age": 35,
+        "city": "Chicago",
+        "color": {
+            "primary": "green",
+            "secondary": "yellow"
+        }
+    }
+}
