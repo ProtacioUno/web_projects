@@ -46,10 +46,12 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
         let color_type = "primary"
         let color_selected = "pink" ; 
         
-
         let data_key = Object.keys(data)
         let data_val = Object.values(data) 
+        console.log("data_val" , data_val)
         // let data_val = Object.values(data) 
+
+
 
         function object_color(colors){
             let colorxx = colors.color 
@@ -71,11 +73,6 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
                 // Object { green: "#008000", purple: "#800080", pink: "#FFC0CB", cyan: "#00FFFF" } 
 
 
-            // console.log(color_vals) 
-            
-
-        
-
             color_keys.forEach((colors, xx)=>{
                 if(color_type == colors){
                     console.log(color_keys[xx]);
@@ -83,26 +80,25 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
                     
                     // console.log(xx)
                 }
-                // console.log(colors) 
-                // if(color_type == col)
-                // console.log
+               
             })
             
-            // return colors.color ; 
+          
         }
         
         
-        // console.log(data_key)
+        console.log("Data key" , data_key)
         data_key.forEach((data_keyxx , xx)=> {
             if(enpot == data_keyxx){
                                                 
                 // console.log(data_key)  
-                // console.log(data_keyxx)           
+                console.log( "data_keyxx", data_keyxx)           
                                       
                 
                 // console.log(data_val) 
                 // console.log(data_val[xx]) 
                 let data_selectname = data_val[xx] ; 
+                
                 
                 // console.log(data_selectname.color) 
                 object_color(data_selectname)
