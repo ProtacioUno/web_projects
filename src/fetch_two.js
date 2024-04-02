@@ -22,7 +22,7 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
          
     }
 
-
+    
     // console.log("data_val",data_val[0])
     
     data_val.forEach(( region_list, xx)=>{

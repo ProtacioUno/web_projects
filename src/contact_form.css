@@ -20,4 +20,26 @@
     display: none;
 }
 
+#progress{
+    display: flex ;
+    flex-direction: column;
+    /* background-color:  green; */
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+@media (max-width: 576px) {
+    /* CSS rules here */
+    
+    #progress{ 
+        /* background-color:  green ; */ 
+        flex-direction: row;                
+     }
+  }
+
+
+
+
 
