@@ -35,7 +35,7 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
 
         let provc_select = document.querySelector('#provc_select'); 
 
-        element_add(region_name , xx ,  provc_select )
+        element_add(region_name , region_name ,  provc_select )
         
         provc_select.addEventListener('change' , ()=>{
             
@@ -63,13 +63,14 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
                 
                 district_list_keys.forEach((district_key , xx) =>{
                     // console.log()
-                    // let  district_val_input = 
+                    // let  district_val_input =    
                     
-                    element_add(district_key , xx , region_district );
+                    element_add(district_key , district_key , region_district );
                     
                     region_district.addEventListener('change' , ()=>{
                         
                         if(region_district.value ==  district_key){
+                            
                             
                             console.log( "district_key", district_key) ;
                             let district_val = district_list_val[xx]
@@ -88,13 +89,14 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
     
                                 
                                 let municipal_key_val = Object.keys(municipal_list) ;
-                                console.log("municipality_list", municipal_key_val) 
+                                // console.log("municipality_list", municipal_key_val) ;
+
                                 // [ "CITY OF MANDALUYONG", "CITY OF MARIKINA", "CITY OF PASIG", "QUEZON CITY", "SAN JUAN CITY" ]
                                 
                                     municipal_key_val.forEach(munip_val =>{
                                         
-                                        console.log("munip_val" , munip_val)
-                                        element_add( munip_val , municipalss , municipalss);
+                                        // console.log("munip_val" , munip_val)
+                                        element_add( munip_val , munip_val , municipalss);
                                         
                                         if( municipal_val == munip_val){
                                             // console.log(munip_val); 
