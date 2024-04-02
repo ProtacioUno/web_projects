@@ -19,7 +19,7 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
         option.textContent = list ;  
         parent_div.appendChild(option);
         // console.log(parent_div)
-         
+        
     }
 
 
