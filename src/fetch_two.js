@@ -44,72 +44,86 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
             console.log( "region_val_val", region_val_val) ;
             
             
-            if(region_val ==  region_name){
+            if(region_val_val ==  region_name){
                 
                 let district_list = data_val[xx].province_list ; 
-                console.log("region data" , district_list )  ; 
-                console.log("region data[0]" , district_list )  ; 
+                // console.log("region data" , district_list )  ; 
+                // console.log("region data[0]" , district_list )  ; 
                 
                 let district_list_keys = Object.keys(district_list);
                 let district_list_val = Object.values(district_list);
-                
+                let region_district = document.querySelector('#region_district');
+                let region_district_val = document.querySelector('#region_district').value;
                 // must add to 
-                console.log("district_key" , district_list_keys)
+                // console.log("district_key" , district_list_keys)
                 //  [ "NATIONAL CAPITAL REGION - FOURTH DISTRICT", "NATIONAL CAPITAL    REGION - MANILA", "NATIONAL CAPITAL REGION - SECOND DISTRICT"]
-                
-                
-                console.log("district_val" , district_list_val)  
+                            
+                // console.log("district_val" , district_list_val)  
                 // console.log("district_val" , district_list_val[0])
                 
                 district_list_keys.forEach((district_key , xx) =>{
                     // console.log()
                     // let  district_val_input = 
                     
+                    element_add(district_key , xx , region_district );
                     
-                    if(district_val ==  district_key){
+                    region_district.addEventListener('change' , ()=>{
                         
-                        console.log( "district_key", district_key) ;
-                        let district_val = district_list_val[xx]
-                        console.log(district_list_val[xx]) ; 
-                        
-                        let municipality_key = Object.keys(district_val);
-                        let municipality_val = Object.values(district_val);
-                        
-                        console.log("municipalit_key" , municipality_key) ; 
-                        console.log("municipalit_val" , municipality_val) ; 
-                        
-                        
-                        municipality_val.forEach((municipal_list , ii) =>{
-                            console.log("Municipil_each" ,municipal_list)  
+                        if(region_district.value ==  district_key){
                             
-                            let municipal_key_val = Object.keys(municipal_list) ;
-                            console.log("municipality_list", municipal_key_val) 
-                            // [ "CITY OF MANDALUYONG", "CITY OF MARIKINA", "CITY OF PASIG", "QUEZON CITY", "SAN JUAN CITY" ]
+                            console.log( "district_key", district_key) ;
+                            let district_val = district_list_val[xx]
+                            console.log(district_list_val[xx]) ; 
                             
-                            municipal_key_val.forEach(munip_val =>{
-                                if( municipal_val == munip_val){
-                                    // console.log(munip_val); 
-                                }
-                            })
-                            // if(municipal_val == municipal_list ){
-                                // console.log(municipal_list);
-                                // }
+                            let municipality_key = Object.keys(district_val);
+                            let municipality_val = Object.values(district_val);
+                            let municipalss = document.querySelector('#municipal');
+                            
+                            console.log("municipalit_key" , municipality_key) ; 
+                            console.log("municipalit_val" , municipality_val) ; 
+                            
+                            
+                            municipality_val.forEach((municipal_list , ii) =>{
+                                console.log("Municipil_each" ,municipal_list)  
+    
                                 
-                            })
-                            // console.log("municipalit_val[0]" , municipality_val[xx]) ;
-                            // 
-                            
-                            // console.log("municipalit_val[0]" , Object.keys(municipality_val[0])) ;
-                            // let municipal_key_key = Object.keys(municipality_val[0]);
-                            
-                            // console.log(municipal_key_key)
-                            
-                            
-                            // console.log()
-                            
-                            
-                        }
-                    })
+                                let municipal_key_val = Object.keys(municipal_list) ;
+                                console.log("municipality_list", municipal_key_val) 
+                                // [ "CITY OF MANDALUYONG", "CITY OF MARIKINA", "CITY OF PASIG", "QUEZON CITY", "SAN JUAN CITY" ]
+                                
+                                    municipal_key_val.forEach(munip_val =>{
+                                        
+                                        console.log("munip_val" , munip_val)
+                                        element_add( munip_val , municipalss , municipalss);
+                                        
+                                        if( municipal_val == munip_val){
+                                            // console.log(munip_val); 
+                                        }
+                                    })
+                                // if(municipal_val == municipal_list ){
+                                    // console.log(municipal_list);
+                                    // }
+                                    
+                                })
+                                // console.log("municipalit_val[0]" , municipality_val[xx]) ;
+                                // 
+                                
+                                // console.log("municipalit_val[0]" , Object.keys(municipality_val[0])) ;
+                                // let municipal_key_key = Object.keys(municipality_val[0]);
+                                
+                                // console.log(municipal_key_key)
+                                
+                                
+                                // console.log()
+                                
+                                
+                            }
+                        })  // IF()
+
+                    }) // CHANGEE
+
+                    
+
                     
                     // console.log("data_val" , district_list_val) 
                     // console.log("data_val" , district_list_val) 
@@ -120,10 +134,10 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
                 
                 
                 
-            })
+            }) // IF ()
             
-            
-        })
+             
+        }) // CHANGE 
             
             
             
