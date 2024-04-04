@@ -106,12 +106,31 @@ back_2_dd.addEventListener('click', ()=>{
 let yes = document.querySelector('#yes');
 let no = document.querySelector('#no');
 let build_form = document.querySelector('#build_form'); 
+    let unit = document.querySelector('#unit'); 
+    let build_name = document.querySelector('#build_name'); 
 
 // ask_build.addEventListener('click')
 
+
+
 yes.addEventListener('click' , ()=>{
+    build_form.classList.remove('inactive');
+    unit.removeAttribute('readonly');
+    build_name.removeAttribute('readonly');
+    console.log(unit)
     
 })
+
+no.addEventListener('click' , ()=>{    
+    build_form.classList.add('inactive');     
+    unit.setAttribute('value', 'NULL') ;
+    build_name.setAttribute('value', 'NULL') ;
+    unit.setAttribute('readonly' , 'readonly') ;     
+    build_name.setAttribute('readonly' , 'readonly') ;     
+    console.log(unit)
+}) 
+
+
 
 
 
