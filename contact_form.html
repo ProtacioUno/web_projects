@@ -211,22 +211,40 @@
                                     </div> 
                                                                    
                                 </div>
-                                <div class="row g-3">
+                                <div class="row">
                                     <h3> Do you live in aparment building or condo?  </h2>
-                                    <div class="col-12">
+                                    <div class="col d-flex justify-content-center gap-4 ">
                                         <input type="radio" class="btn-check" name="status" id="no" autocomplete="off" checked value="no">
-                                        <label class="btn btn-outline-primary col-5" for="no"> No </label>                                        
+                                        <label class="btn btn-outline-primary col-4" for="no" id="no"> No </label>                                        
                                         <input type="radio" class="btn-check" name="status" id="yes" autocomplete="off" checked value="yes">
-                                        <label class="btn btn-outline-primary col-6" for="yes"> Yes </label>
+                                        <label class="btn btn-outline-primary col-4" for="yes" id="yes"> Yes </label>
                                     
                                     </div>   
                                 </div>
 
+                                <div class="row inactive " id="build_form"> 
+                                    <!-- <h1> heyo </h1>  -->
+                                    <div class="col-md-6">            
+                                        <label for="unit" class="col-12 mb-2"> Unit 
+                                        </label>
+                                        <input id="unit" class="col-12 mb-2"  name="unit">                                            
+                                    </div> 
+                                    <div class="col-md-6">
+                    
+                                        <label for="build_name" class="col-12 mb-2"> Building name 
+                                        </label>
+                                        <input id="build_name" class="col-12 mb-2 border "  name="build_name">                                           
+                                    </div> 
+                                     
+                                </div>
                                 
                                 <div class="row d-flex justify-content-around mt-5" >  
                                     <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2_dd" value="Back">
                                     <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
                                 </div>   
+                                <!-- form if yes ?  condo  else null condo  -->
+
+                                
                                 
                             </div>
                         </div>

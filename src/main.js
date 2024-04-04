@@ -102,6 +102,16 @@ back_2_dd.addEventListener('click', ()=>{
 
 
 
+// let ask_build = document.querySelector('#ask_build');
+let yes = document.querySelector('#yes');
+let no = document.querySelector('#no');
+let build_form = document.querySelector('#build_form'); 
+
+// ask_build.addEventListener('click')
+
+yes.addEventListener('click' , ()=>{
+    
+})
 
 
 
