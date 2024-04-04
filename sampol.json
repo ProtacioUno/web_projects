@@ -1,13 +1,15 @@
-
-
-
 {
     "person1": {
         "name": "John",
         "age": 30,
         "city": "New York",
         "color": {
-            "primary": "blue",
+            "primary": {
+                "blue": "#0000FF",
+                "red": "#FF0000",
+                "green": "#008000",
+                "yellow": "#FFFF00"
+            },
             "secondary": "white"
         }
     },
@@ -16,7 +18,12 @@
         "age": 25,
         "city": "Los Angeles",
         "color": {
-            "primary": "red",
+            "primary": {
+                "red": "#FF0000",
+                "yellow": "#FFFF00",
+                "purple": "#800080",
+                "orange": "#FFA500"
+            },
             "secondary": "black"
         }
     },
@@ -25,7 +32,12 @@
         "age": 35,
         "city": "Chicago",
         "color": {
-            "primary": "green",
+            "primary": {
+                "green": "#008000",
+                "purple": "#800080",
+                "pink": "#FFC0CB",
+                "cyan": "#00FFFF"
+            },
             "secondary": "yellow"
         }
     }

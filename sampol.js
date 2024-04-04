@@ -26,79 +26,126 @@
 
 
 fetch('sampol.json').then(response => response.json()).then(data=> {
-                // const person1 = data.person1;
+                // const person1 = data.person1.then( name=>{ console.log(name)});
                 // const person2 = data.person2;
                 // const person3 = data.person3;
 
-                // console.log(person1);
+                // // console.log(person1);
                 // console.log(person2.name);
-                // console.log(person3);                
-    // console.log(data);             
-    // console.log(Object.keys(data));             
-    // let firstt = Object.keys(data)
-    // console.log(typeof data);                     
-    // let ul = document.querySelector('ul');      
-    
-    // li.textContent = 'First item' ; 
-    // ul.append(li); 
-    
-    // firstt.forEach(titles => {      
-    //     // console.log(titles);                 
-    //     let li = document.createElement('li');  
-    //     li.textContent = titles ;         
-    //     // console.log(ul.childElementCount)
-    //     ul.appendChild(li);                  
-    // }); 
+                // console.log(person3);          
+        
+                
+        // data.then(shit =>{
+        //     console.log(shit)
+        // })
+        
+        
+        // console.log()
+        let enpot = "person2" ; 
+        let enpot_2 = "color" ; 
+        let color_type = "primary"
+        let color_selected = "pink" ; 
+        
+        let data_key = Object.keys(data)
+        let data_val = Object.values(data) 
+        console.log("data_val" , data_val)
+        // let data_val = Object.values(data) 
 
-    // firstt.forEach(x => {
-    //     // let li_  x = "sampoink" ;          
-    // })
-    // let numberOfItems = 3 ; 
 
-    // let valus = Object.values(data) 
 
-    
-    // console.log(Object.values(valus[0].color)) ;
-            // Array [ "blue", "white" ]
-            // 0: "blue"
-            // 1: "white"
-            // length: 2
+        function object_color(colors){
+            let colorxx = colors.color 
+            
+            // colorsxx.forEach(colorhue )
+            // console.log(colorxx);
+            
+            
+            let color_keys = Object.keys(colorxx)
+            let color_vals = Object.values(colorxx)
 
-    // maganda if selecting to dropdown
-    // let city = Object.values(data).map(shu => shu.color) ; 
-    // console.log(city);
-    
-    
+            console.log("color_keys" , color_keys) 
+                    
+            console.log("color_vals" , color_vals)  
+                //  Array [ "primary", "secondary" ]
+                
+
+            // console.log(colorxx.color_type);                                  
+                // Object { green: "#008000", purple: "#800080", pink: "#FFC0CB", cyan: "#00FFFF" } 
+
+
+            color_keys.forEach((colors, xx)=>{
+                if(color_type == colors){
+                    console.log(color_keys[xx]);
+                    console.log("colors_valx[x]x" , color_vals[xx]);
+                    
+                    // console.log(xx)
+                }
+               
+            })
+            
+          
+        }
+        
+        
+        console.log("Data key" , data_key)
+        data_key.forEach((data_keyxx , xx)=> {
+            if(enpot == data_keyxx){
+                                                
+                // console.log(data_key)  
+                console.log( "data_keyxx", data_keyxx)           
+                                      
+                
+                // console.log(data_val) 
+                // console.log(data_val[xx]) 
+                let data_selectname = data_val[xx] ; 
+                
+                
+                // console.log(data_selectname.color) 
+                object_color(data_selectname)
+                let sampol = data_selectname.color ;
+                let sampol_key = Object.keys(sampol) ; 
+                console.log( "sampoink", sampol_key);
+                
+                // console.log(sampol)
+                // conseol 
+                // break ;
+                
+                                                                
+            }
+        })
      
-    let selecteds =  'Alice';  
+
+        // let names = Object.values(data).map(shu => shu.color) ; 
+        // console.log(names) 
+        
+
+    
+
+    // let selecteds =  'Alice';  
     
     // if statement namen
 
-    let valus = Object.values(data);
-    
+    // let valus = Object.values(data);
+    // console.log(valus);     
+    // console.log("values with[]" , valus[2]);    
     // console.log(valus.name)
-    
-    // valus.forEach(x => {
-    //     if(selecteds  == x.name) {            
-            
-    //         // console.log(x.color) 
-    //     } 
+   
 
-
-    let provc = document.querySelector('#provc_select'); 
+    // let provc = document.querySelector('#provc_select'); 
     
     // let namekie = 
     // let city = Object.values(data).map(shu => shu.color) ; 
-    let names = Object.values(data).map(shu => shu.name) ; 
-    names.forEach((ngalan , xx) =>{
-        let option = document.createElement('option'); 
-        option.setAttribute('value', xx) ; 
-        option.textContent = ngalan ; 
-        provc.appendChild(option);            
-
+    // let names = Object.values(data).map(shu => shu.name) ; 
+    // names.forEach((ngalan , xx) =>{
+    //     let option = document.createElement('option'); 
+    //     option.setAttribute('value', xx) ; 
+    //     option.textContent = ngalan ; 
+    //     provc.appendChild(option);                    
+    //     // console.log(ngalan)
         
-        // console.log(ngalan)
-    })  
+    // })  
+
+    // .then()
     
     // console.log(provc); 
 

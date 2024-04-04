@@ -25,6 +25,13 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
         // option.setAttribute('values', )        
     }
 
+    function element_add(list, index , parent_div){
+        let option = document.createElement('option') ; 
+        option.setAttribute('values', index);
+        option.textContent = list ;  
+        parent_div. appendChild(option);
+        
+    }
     
     
 
@@ -125,8 +132,8 @@ fetch('api/philippine_provinces_cities_municipalities_and_barangays_2019v2.json'
                             if(district_val == distri) { 
                                 
                                 province_valsss.forEach( provs_vals =>{
-                                    console.log(provs_vals)   
-                                    console.log(Object.values(provs_vals))   
+                                    console.log(provs_vals) 
+                                    console.log(Object.values(provs_vals))                
                                     
                                 } )
                                                                 

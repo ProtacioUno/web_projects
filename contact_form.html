@@ -25,11 +25,13 @@
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     
                      <div class="row"> 
-                        <div class="col-md-2 d-flex flex-column justify-content-around">  
+                        <!-- <div class="col-md-2 d-flex flex-column justify-content-around" id="progress">   -->
+                        <div class="col-md-2" id="progress">  
                             <div id="step-1" class="circle">1</div>
                             <div id="step-2" class="circle">2</div>
                             <div id="step-3" class="circle">3</div>
-                         </div>                   
+                        </div>        
+
                         <div class="col-md-10 inactive" id="form_1">  
                             <div class="row"> 
                                 <label for="last" class="col-md-3 mb-2"> Last name </label>
@@ -58,21 +60,19 @@
                         </div>   
                          <div class="col-md-10 inactive" id="form_2"> 
                             <div class="row g-3">
-                                <div class="col-md-6"> 
-                                    <input type="radio" class="btn-check" name="status" id="single" autocomplete="off" checked value="single">
+                                <div class="col-md-6">
+                                    <input type="radio" class="btn-check" name="status" id="single" autocomplete="off" checked value="single"> 
                                     <label class="btn btn-outline-primary col-12" for="single"> Single </label>
-                                </div>
-                                
-                                <div class="col-md-6 col-12">                                    
+                                </div>                                
+                                <div class="col-md-6 col-12">                                     
                                     <input type="radio" class="btn-check" name="status" id="married" autocomplete="off" value="married">
                                     <label class="btn btn-outline-primary col-12" for="married"> Married</label>
-                                </div>
-
+                                </div> 
                                 <div class="col-md-6 col-12">                                    
                                     <input type="radio" class="btn-check" name="status" id="divorce" autocomplete="off" value="divorse">
                                     <label class="btn btn-outline-primary col-12" id="divorce" for="divorce"> Divorced </label>
                                 </div>
-                            
+                                                        
                                 <div class="col-md-6">                                    
                                     <input type="radio" class="btn-check" name="status" id="widowed" autocomplete="off"  value="widowed"> 
                                     <label class="btn btn-outline-primary col-12" for="widowed"> Widowed </label>
@@ -80,17 +80,13 @@
                                 <div class="col-md-6">                                    
                                     <input type="radio" class="btn-check" name="status" id="seperated" autocomplete="off" value="seperated">
                                     <label class="btn btn-outline-primary col-12" for="seperated"> Seperatedd </label>
-                                </div>
-                                 
-            
+                                </div>                                             
                             </div> 
                              <div class="row d-flex justify-content-around mt-5" >
                                 <input class="btn btn_primary col-md-3" type="button" name="back_1" id="back_1" value="Back">
                                 <input class="btn btn-primary col-md-3" type="button" name="next_2" id="next_2" value="Next">
                               </div>
-
                          </div>
-
                         
                             <!-- IFF SINGLEEEEE -->
                         <div class="col-md-10 inactive" id="form_3_single"> 
@@ -101,12 +97,12 @@
                                 <label for="moms" class="col-md-3 mb-2"> Mother's name</label>
                                 <input id="moms" class="col-md-9 mb-2"  name="moms">                                                                  
                             </div>       
-
+                            
                             <div class="row d-flex justify-content-around mt-5" >
                                 <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2_ss" value="Back">
                                 <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
                             </div>                                                         
-
+                            
                             
                         </div> 
                         
@@ -120,71 +116,121 @@
                                     <label for="moms" class="col-md-3 mb-2"> Father's name</label>
                                     <input id="moms" class="col-md-9 mb-2"  name="moms">                                                                  
                                 </div> 
-
+                                
                                 <div class="row"> 
-                                        <label for="spos" class="col-md-3 mb-2"> Spouse's name</label> 
-                                        <input id="spos" class="col-md-9 mb-2"  name="spos">  
-                                        
-                                        <label for="tin" class="col-md-3"> TIN number </label>     
-                                        <input type="input" class="col-2">
+                                    <label for="spos" class="col-md-3 mb-2"> Spouse's name</label> 
+                                    <input id="spos" class="col-md-9 mb-2"  name="spos">  
+                                    
+                                    <label for="tin" class="col-md-3"> TIN number </label>     
+                                    <input type="input" class="col-2">
                                         <input type="input" class="col-2">
                                         <input type="input" class="col-2">
                                         <input type="input" class="col-3"> 
-                                </div> 
+                                    </div> 
+                                    
+                                    <div class="row d-flex justify-content-around mt-5" >  
+                                        <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2_dd" value="Back">
+                                        <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
+                                    </div>         
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-10 " id="form_4">
+                                <div class="row">
+                                <h1> Address field</h1> 
+                                <!-- <select id="dropdown"></select>
+                                -->
+                                <!-- <ul id="province">  </ul> -->
+                                
+                                <div class="row">
+                                    <!-- <h1 class="col-md-6"> Region</h1>
+                                    <h1 class="col-md-6"> Region list / district</h1> -->
+                                    <!-- <h1 class="col-md-6"> </h1> -->
+                                </div>
+                                
+                                <div class="row">  
+                                    <div class="col-md-4">                                        
+                                        <select class="form-select form-select-sm " id="provc_select" aria-label="Small select example">
+                                            <!-- <option selected>Open this select menu</option>  -->
+                                            
+                                            <!-- <option value="1">One</option>
+                                                    asd <option value="2">Two</option>
+                                                <option value="3">Three</option> -->
+                                            </select> 
+                                        </div>
+                                        
+                                    <div class="col-md-4">
+                                        
+                                        <select class="form-select form-select-sm col-md-3" id="region_district" aria-label="Small select example"> 
+                                            <!-- hhehe -->
+                                            <!-- <option value=""></option> -->
+                                            
+                                        </select> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select form-select-sm col-6" id="municipal" aria-label="Small select example"> 
+                                            <!-- hhehe -->
+                                            <!-- <option value=""></option> --> 
+                                            
+                                            
+                                        </select> 
+                                        
+                                    </div>
+                                    
+                 <!-- se; -->
+                                                                                                            
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">            
+                                        <label for="brgy" class="col-12 mb-2"> Brgy 
+                                        </label>
+                                        <input id="brgy" class="col-12 mb-2"  name="brgy">                                            
+                                    </div> 
+                                    <div class="col-md-6">
+                    
+                                        <label for="sub_brgy_zone" class="col-12 mb-2"> Subdivision/Brgy/
+                                        </label>
+                                        <input id="sub_brgy_zone" class="col-12 mb-2 border border-success "  name="sub_brgy_zone">                                           
+                                    </div> 
+                            
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                    
+                                        <label for="Street" class="col-12 mb-2"> Street 
+                                        </label>
+                                        <input id="Street" class="col-12 mb-2"  name="Street">                                            
+                                    </div> 
+                                    <div class="col-md-6">
+                    
+                                        <label for="block" class="col-12 mb-2"> Block 
+                                        </label>
+                                        <input id="block" class="col-12 mb-2"  name="block">                                           
+                                    </div> 
+                                                                   
+                                </div>
+                                <div class="row g-3">
+                                    <h3> Do you live in aparment building or condo?  </h2>
+                                    <div class="col-12">
+                                        <input type="radio" class="btn-check" name="status" id="no" autocomplete="off" checked value="no">
+                                        <label class="btn btn-outline-primary col-5" for="no"> No </label>                                        
+                                        <input type="radio" class="btn-check" name="status" id="yes" autocomplete="off" checked value="yes">
+                                        <label class="btn btn-outline-primary col-6" for="yes"> Yes </label>
+                                    
+                                    </div>   
+                                </div>
+
                                 
                                 <div class="row d-flex justify-content-around mt-5" >  
                                     <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2_dd" value="Back">
                                     <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
-                                </div>         
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-10 " id="form_4">
-                            <div class="row">
-                                <h1> Address</h1> 
-                                <!-- <select id="dropdown"></select>
-                                 -->
-                                 <!-- <ul id="province">  </ul> -->
-                                
-                                 <div class="row">
-                                    <h1 class="col-md-6"> Region</h1>
-                                    <h1 class="col-md-6"> Region list / district</h1>
-                                    <!-- <h1 class="col-md-6"> </h1> -->
-                                 </div>
-
-                                <div class="row">
-                                    
-                                    <select class="form-select form-select-sm col-md-6" id="provc_select" aria-label="Small select example">
-                                        <!-- <option selected>Open this select menu</option>  -->
-                                        
-                                        <!-- <option value="1">One</option>
-                                            asd                                <option value="2">Two</option>
-                                            <option value="3">Three</option> -->
-                                     </select> 
-                                        
-                                        
-                                    <select class="form-select form-select-sm col-md-6" id="region_district" aria-label="Small select example"> 
-                                            <!-- hhehe -->
-                                            <!-- <option value=""></option> -->
-                                            
-                                    </select> 
-                                    
-                                    <!-- se; -->
-                            
-                                    
-                                    
-                                    </div>
-
-                                
+                                </div>   
                                 
                             </div>
                         </div>
-                        
-                        
-                        
-                        
-
-                                                            
+                                               
                      </div>
                     </div>
                 </form>
@@ -195,6 +241,8 @@
     
     <script src="js/bootstrap.bundle.js"></script>
     <script src="src/main.js"> </script>
-    <script src="src/fetch.js"></script>
+    <!-- <script src="src/fetch.js"></script> -->
+    <script src="src/fetch_two.js"></script>
+
 </body>
 </html>
