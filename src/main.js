@@ -82,7 +82,7 @@ next_2.addEventListener('click', ()=>{
 })
 
 
-back_2_ss = document.querySelector('#back_2_ss') ;
+let back_2_ss = document.querySelector('#back_2_ss') ;
 back_2_ss.addEventListener('click', ()=>{
     // toggle to inactive 
     form_3_single.classList.toggle('inactive')
@@ -91,7 +91,7 @@ back_2_ss.addEventListener('click', ()=>{
     console.log('checkings'); 
 })
 
-back_2_dd = document.querySelector('#back_2_dd') ;
+let back_2_dd = document.querySelector('#back_2_dd') ;
 back_2_dd.addEventListener('click', ()=>{
     // toggle to inactive 
     form_3_double.classList.toggle('inactive')
@@ -99,6 +99,31 @@ back_2_dd.addEventListener('click', ()=>{
     form_2.classList.toggle('inactive')    
     console.log('checkings'); 
 }) 
+
+// let next_3 = document.querySelector('#next_3');  
+let BAYOT = document.querySelector('#BAYOT');  
+// let next_3_dd = document.querySelector('#next_3_dd');  
+let form_4 = document.querySelector('#form_4')  ;
+
+next_3.addEventListener('click' , ()=>{
+    // toggle inactive  
+    console.log('im workign shits')
+    // console.log(next_3_dd)
+    if(next_3_dd.classList.contains('ddd')) {
+      console.log('im maried')  ;  
+        form_3_double.classList.toggle('inactive'); 
+    } else {
+        console.log('im ss') ;
+    }
+    
+    // if(next_3.value == )
+    
+    
+    // form_3_single.classList.toggle('inactive');
+    
+    // toggle actinve 
+    form_4.classList.toggle('inactive');
+})
 
 
 
