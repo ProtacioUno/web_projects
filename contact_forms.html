@@ -134,7 +134,7 @@
                                     <select class="form-select form-select-sm col-md-3 btn-greys" id="region_district" aria-label="Small select example"> 
                                         <!-- hhehe -->
                                         <!-- <option value=""></option> -->
-                                    </select> 
+                                    </select> s
                                 </div>
                                 <div class="col-md-4">
                                     <label for="municipal"> Municipality</label>
@@ -172,12 +172,12 @@
                             <h3>  Do you live in aparment building or condo? </h3>
 
                             <div class="col-6">
-                                <input type="radio" class="btn-check" name="condo" id="no" autocomplete="off"  value="no" onchange="getValue()"> 
+                                <input type="radio" class="btn-check" name="condo" id="no" autocomplete="off"  value="no" onchange="condog()"> 
                                 <label class="btn btn-outline-secondary  col-12"  for="no"> no 
                                 </label>
                             </div>     
                             <div class="col-6"> 
-                                <input type="radio" class="btn-check" name="condo" id="yes" autocomplete="off"  value="yes" onchange="getValue()"> 
+                                <input type="radio" class="btn-check" name="condo" id="yes" autocomplete="off"  value="yes" onchange="condog()"> 
                                 <label class="btn btn-outline-secondary col-12"  for="yes"> yes 
                                 </label>
                             </div>    
@@ -189,6 +189,18 @@
                     <div id="form_5" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
 
                         <div class="row g-3"> 
+                            <h1>  Building info </h1>
+                            <div class="col-md-6 "> 
+                                <label for="build_name" class="col-12 mb-2">   Building Name/Apartment name</label>
+                                <input id="build_name" name="build_name" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="unit" class="col-12 mb-2">   Unit/Room/Floor/Building no.  </label>
+                                <input id="unit" name="unit" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            
+                            
+                            
                             
                         </div>
                     </div>

@@ -51,3 +51,30 @@ function getValue(){
     }
  
 } 
+
+function condog(){
+    
+    let condo_ask = document.querySelector('input[name="condo"]:checked').value;
+    console.log("selectced +" , condo_ask); 
+    let build_name = document.querySelector('#build_name') 
+    let unit = document.querySelector('#unit') 
+
+    if(condo_ask == 'no'){
+        build_name.setAttribute('disabled' , 'disabled');
+        build_name.setAttribute('value' , '');
+        console.log(build_name)
+        unit.setAttribute('disabled' , 'disabled');
+        unit.setAttribute('value' , '');
+        console.log(unit)
+        // build_nam
+    } else {
+         
+        build_name.removeAttribute('disabled');
+        build_name.removeAttribute('value'); 
+        
+        unit.removeAttribute('disabled');
+        unit.removeAttribute('value');
+        console.log(build_name)
+        console.log(unit)
+    }
+}
