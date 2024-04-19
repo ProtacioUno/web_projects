@@ -44,28 +44,34 @@
                         <!-- <div class="col-12">  -->
                             <label for="tin" class="col-md-3"> TIN number </label>     
                             <div class="col-md-9 row m-0">
-                                <input type="number" class=" tin_control no-spinner col-3 p-2 " oninput="validateNumberInput(this)">
-                                <input type="number" class=" tin_control no-spinner col-3 p-2 " oninput="validateNumberInput(this)" >
-                                <input type="number" class=" tin_control no-spinner col-3 p-2 " oninput="validateNumberInput(this)">
-                                <input type="number" class=" tin_control no-spinner col-3 p-2 " oninput="validateNumberInput(this)">
+                                <input type="number" name="tin_01" class=" tin_control no-spinner col-3 p-2 "  
+                                oninput="validateNumberInput(this)">
+                                <input type="number" name="tin_01" class=" tin_control no-spinner col-3 p-2 "  
+                                oninput="validateNumberInput(this)">
+                                <input type="number" name="tin_01" class=" tin_control no-spinner col-3 p-2 "  
+                                oninput="validateNumberInput(this)">
+                                
                             </div>
                         
         
                        
                         <div class="col-md-6"> 
-                            <label for="last" class="col-12 mb-2"> Contact number </label>
-                            <input id="last" class="col-12 mb-2 form-control btn-greys" >  
+                            <label for="contact" class="col-12 mb-2"> Contact number </label>
+                            <input id="contact" name="contact" class="col-12 mb-2 form-control btn-greys" >  
                         </div>
                         <div class="col-md-6"> 
-                            <label for="last" class="col-12 mb-2"> Contact number </label>
-                            <input id="last" class="col-12 mb-2 form-control btn-greys" >  
+                            <label for="email" class="col-12 mb-2"> email number </label>
+                            <input id="email" name="email" class="col-12 mb-2 form-control btn-greys" >  
                         </div>
 
                         
                         
                          
                     </div>
-                    <input type="submit" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder">
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="cleck()"> -->
+                   
 
 
                     <div id="form_2" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
@@ -98,6 +104,11 @@
                         </div> 
                     </div>
 
+                        <!-- checshit -->
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_02()"> -->
+
+
                     <div id="form_3" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
                         <div class="row g-3"> 
                             <h2>  Reference information </h2>
@@ -119,11 +130,11 @@
                             </div>
                             <div class="col-md-6 "> 
                                 <label for="spos" class="col-12 mb-2"> spos firtname </label>
-                                <input id="spos_last" name="spos" class=" spos col-12 mb-2 form-control btn-greys" >   
+                                <input id="spos_last" name="spos_last" class=" spos col-12 mb-2 form-control btn-greys" >   
                             </div>
                             <div class="col-md-6 "> 
                                 <label for="spos" class="col-12 mb-2"> spos givename </label>
-                                <input id="spos_first" name="spos" class=" spos col-12 mb-2 form-control btn-greys" >   
+                                <input id="spos_first" name="spos_first" class=" spos col-12 mb-2 form-control btn-greys" >   
                             </div>
                         </div>
                         
@@ -131,6 +142,11 @@
                         
             
                     </div>
+
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_03()"> -->
+
                     <div id="form_4" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
                         <div class="row g-3"> 
                             <h2>  Address Field </h2>
@@ -139,20 +155,22 @@
                                     <!-- <i class="fa fa-life-saver
                                         aria-hidden="true"></i> -->
                                         <label for="provc_select"> Province select </label>
-                                        <select class="form-select form-select-sm  btn-greys" id="provc_select" aria-label="Small select example">
+                                        <select class="form-select form-select-sm  btn-greys" 
+                                        name="provc_select"
+                                        id="provc_select" aria-label="Small select example">
                                             
                                         </select> 
                                 </div>                                    
                                 <div class="col-md-4">                                    
                                     <label for="region_district"> region distric </label>
-                                    <select class="form-select form-select-sm col-md-3 btn-greys" id="region_district" aria-label="Small select example"> 
+                                    <select class="form-select form-select-sm col-md-3 btn-greys" id="region_district" name="region_district" aria-label="Small select example"> 
                                         <!-- hhehe -->
                                         <!-- <option value=""></option> -->
                                     </select> 
                                 </div>
                                 <div class="col-md-4">
                                     <label for="municipal"> Municipality</label>
-                                    <select class="form-select form-select-sm col-6 btn-greys" id="municipal" aria-label="Small select example"> 
+                                    <select class="form-select form-select-sm col-6 btn-greys" id="municipal" name="municipal" aria-label="Small select example"> 
                                         <!-- hhehe -->
                                         <!-- <option value=""></option> --> 
                                         
@@ -168,18 +186,30 @@
                                 <input id="brgy" name="brgy" class="col-12 mb-2 form-control  btn-greys" >  
                             </div>
                             <div class="col-md-6 "> 
-                                <label for="brgy" class="col-12 mb-2"> Barangay </label>
-                                <input id="brgy" name="brgy" class=" col-12 mb-2 form-control  btn-greys" >  
+                                <label for="town_distric" class="col-12 mb-2"> Town/district </label>
+                                <input id="town_distric" name="town_distric" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="subvil" class="col-12 mb-2"> Subdivizion/Village/Zone Barangay</label>
+                                <input id="subvil" name="subvil" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="street" class="col-12 mb-2"> Street Name </label>
+                                <input id="street" name="street" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="blk" class="col-12 mb-2"> Lot/Block/Phase/Phase no </label>
+                                <input id="blk" name="blk" class=" col-12 mb-2 form-control  btn-greys" >  
                             </div>
                             
-
-
-
-
                         </div>
 
       
                     </div>
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_04()"> -->
+
 
                     <div id="form_5" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
                         <div class="row g-3">
@@ -198,6 +228,9 @@
                         </div>
                         
                     </div>
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_05()"> -->
 
                     
                     <div id="form_6" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
@@ -220,8 +253,8 @@
                     </div>
                     
 
-                    <!-- <div  class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3" >  -->
-                    <input type="submit" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder">
+                    <!-- <div  class="col-md-2 col-5 sub-card p-md-4 p-sm-3 p-2 mt-3" >  -->
+                    <input type="button" name="submit"  value="Submit" class="sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder">
 
                     <!-- </div> -->
 
