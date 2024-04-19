@@ -16,7 +16,7 @@
             <div class="row">
                 <h1>   Contact Information </h1>
             </div>
-            <div class="row">   
+            <div class="row d-flex m-md-5" >   
                 
                 <form class="card" method="POST" action="">
                     <h5 class="card-header">Personal information</h5>
@@ -26,13 +26,13 @@
                     
                      <div class="row"> 
                         <!-- <div class="col-md-2 d-flex flex-column justify-content-around" id="progress">   -->
-                        <div class="col-md-2" id="progress">  
+                        <!-- <div class="col-md-2" id="progress">  
                             <div id="step-1" class="circle">1</div>
                             <div id="step-2" class="circle">2</div>
                             <div id="step-3" class="circle">3</div>
-                        </div>        
+                        </div>         -->
 
-                        <div class="col-md-10 inactive" id="form_1">  
+                        <div class="col-md-10 " id="form_1">  
                             <div class="row"> 
                                 <label for="last" class="col-md-3 mb-2"> Last name </label>
                                 <input id="last" class="col-md-9 mb-2" >  
@@ -58,7 +58,7 @@
                                 <a href="#" class="btn btn-primary col-md-3" name="next_1" id="next_1"> Next</a>
                             </div>
                         </div>   
-                         <div class="col-md-10 inactive" id="form_2"> 
+                         <div class="col-md-10  " id="form_2"> 
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <input type="radio" class="btn-check" name="status" id="single" autocomplete="off" checked value="single"> 
@@ -89,7 +89,7 @@
                          </div>
                         
                             <!-- IFF SINGLEEEEE -->
-                        <div class="col-md-10 inactive" id="form_3_single"> 
+                        <div class="col-md-10" id="form_3_single"> 
                             <div class="row">
                                 <h1> single content</h1>
                                 <label for="moms" class="col-md-3 mb-2"> Mother's name</label> 
@@ -100,21 +100,21 @@
                             
                             <div class="row d-flex justify-content-around mt-5" >
                                 <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2_ss" value="Back">
-                                <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
+                                <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3_ss" value="Next">qwe
                             </div>                                                         
                             
                             
                         </div> 
                         
-                        <div class="col-md-10 inactive" id="form_3_married"> 
+                        <div class="col-md-10 " id="form_3_married"> 
                             <div class="row">
                                 <h1> Married </h1>  
                                 
                                 <div class="row">                                                                
                                     <label for="moms" class="col-md-3 mb-2"> Mother's name</label> 
                                     <input id="moms" class="col-md-9 mb-2"  name="moms">  
-                                    <label for="moms" class="col-md-3 mb-2"> Father's name</label>
-                                    <input id="moms" class="col-md-9 mb-2"  name="moms">                                                                  
+                                    <label for="pops" class="col-md-3 mb-2"> Father's name</label>
+                                    <input id="pops" class="col-md-9 mb-2"  name="pops">                                                                  
                                 </div> 
                                 
                                 <div class="row"> 
@@ -133,14 +133,12 @@
                                         <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
                                     </div>         
                                 </div>
-                            </div>
+                        </div>
                             
-                            <div class="col-md-10 " id="form_4">
+                        <div class="col-md-10 inactive" id="form_4">
                                 <div class="row">
                                 <h1> Address field</h1> 
-                                <!-- <select id="dropdown"></select>
-                                -->
-                                <!-- <ul id="province">  </ul> -->
+                               
                                 
                                 <div class="row">
                                     <!-- <h1 class="col-md-6"> Region</h1>
@@ -151,11 +149,7 @@
                                 <div class="row">  
                                     <div class="col-md-4">                                        
                                         <select class="form-select form-select-sm " id="provc_select" aria-label="Small select example">
-                                            <!-- <option selected>Open this select menu</option>  -->
-                                            
-                                            <!-- <option value="1">One</option>
-                                                    asd <option value="2">Two</option>
-                                                <option value="3">Three</option> -->
+                                           
                                             </select> 
                                         </div>
                                         
@@ -164,7 +158,6 @@
                                         <select class="form-select form-select-sm col-md-3" id="region_district" aria-label="Small select example"> 
                                             <!-- hhehe -->
                                             <!-- <option value=""></option> -->
-                                            
                                         </select> 
                                     </div>
                                     <div class="col-md-4">
@@ -177,8 +170,7 @@
                                         
                                     </div>
                                     
-                 <!-- se; -->
-                                                                                                            
+                                                                                            
                                 </div>
                                 
                                 <div class="row">
@@ -217,15 +209,14 @@
                                         <input type="radio" class="btn-check" name="status" id="no" autocomplete="off" checked value="no">
                                         <label class="btn btn-outline-primary col-5" for="no"> No </label>                                        
                                         <input type="radio" class="btn-check" name="status" id="yes" autocomplete="off" checked value="yes">
-                                        <label class="btn btn-outline-primary col-6" for="yes"> Yes </label>
+                                        <label class="btn btn-outline-primary col-6" for="yes"> Yes </label>                            
+                                    </div> 
                                     
-                                    </div>   
                                 </div>
-
                                 
                                 <div class="row d-flex justify-content-around mt-5" >  
-                                    <input class="btn btn_primary col-md-3" type="button" name="back_2" id="back_2_dd" value="Back">
-                                    <input class="btn btn-primary col-md-3" type="button" name="next_3" id="next_3" value="Next">
+                                    <input class="btn btn_primary col-md-3" type="button" name="back_3" id="back_3" value="Back">
+                                    <input class="btn btn-primary col-md-3" type="button" name="next_4" id="next_4" value="Next">
                                 </div>   
                                 
                             </div>

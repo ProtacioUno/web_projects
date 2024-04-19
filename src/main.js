@@ -104,6 +104,43 @@ back_2_dd.addEventListener('click', ()=>{
 
 
 
+let next_3_ss = document.querySelector('#next_3_ss'); 
+// let form_4 = document.querySelector('#form_4'); 
+
+let form_four = document.querySelector('#form_4');
+
+next_3_ss.addEventListener('click' , ()=> {
+    // togggle to inactiv 
+    console.log('im workignS')
+    form_3_single.classList.toggle('inactive');
+    // tooggle to active
+    form_four.classList.toggle('inactive');    
+    
+    let from_status = 'single' ; 
+    
+})
+
+let back_4 = document.querySelector('back_4');
+
+back_4.addEventListener('click' , ()=>{
+    // if(from_status == 'single'){
+        // toggle to inactive
+         form_four.classList.toggle('inactive'); 
+         
+         // tovggle to active
+         form_3_single.classList.toggle('inactive'); 
+    // }
+    
+})
+
+
+
+
+
+
+
+
+
 
 // back_3 = document.querySelector('#back_3') 
 // back_3.addEventListener('click' , ()=>{
