@@ -28,22 +28,26 @@ function getValue(){
         // set aatribu to nulls
 
         spos.forEach(spos_each => {
+            spos_each.setAttribute('disabled' , 'disabled');
+            spos_each.setAttribute('value' , '') ;  
             console.log(spos_each)
-            // spos_each.setAttribute('disabled' , 'disabled');
-            // spos_each.setAttribute('value' , '') ; 
+            
         });
         // spos.setAttribute('disabled' , 'disabled');
         // spos.setAttribute('value' , '') ; 
         // console.log(spos)
         // spos.forEach
         // spos.forEach(inamers  => {
-        //     console.log(inamer);
-        // });
-        
-    } else {
-        spos.removeAttribute('disabled');
-        spos.removeAttribute('value');
-        console.log('hehe not') ;
+            //     console.log(inamer);
+            // });
+            
+        } else {
+            spos.forEach(spos_each =>{
+                spos_each.removeAttribute('disabled');
+                spos_each.removeAttribute('value');
+                console.log(spos_each)
+        })
+        // console.log('hehe not') ;
     }
  
 } 

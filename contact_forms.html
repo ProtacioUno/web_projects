@@ -23,7 +23,7 @@
 
                 <form class="p-md-5" method="POST" action="">
                     <h1> Information</h1>
-                    <div id="form_1" class="row sub-card p-md-4 p-sx-5" > 
+                    <div id="form_1" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
                         
                         <h1>  Personal Information </h1>
                         <div class="col-md-4 "> 
@@ -62,7 +62,7 @@
                          
                     </div>
 
-                    <div id="form_2" class="row sub-card p-md-4 p-sx-5 mt-3" >
+                    <div id="form_2" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
                         <div class="row g-3">
                             <h1> Civil Status </h1>
                             <div class="col-6">
@@ -92,29 +92,108 @@
                         </div> 
                     </div>
 
-                    <div id="form_3" class="row sub-card p-md-4 p-sx-5 mt-3" > 
-                        <h1>  Reference information </h1>
-                        <div class="col-md-6 "> 
-                            <label for="moms" class="col-12 mb-2"> mother's fullname </label>
-                            <input id="moms" name="moms" class="col-12 mb-2 form-control  btn-greys" >  
-                        </div>
-                        <div class="col-md-6 "> 
-                            <label for="pops" class="col-12 mb-2"> fother's fullname </label>
-                            <input id="pops" name="pops" class="col-12 mb-2 form-control btn-greys" >  
-                        </div>
-                        <div class="col-md-6 "> 
-                            <label for="spos" class="col-12 mb-2"> spos firtname </label>
-                            <input id="spos_last" name="spos" class=" spos col-12 mb-2 form-control btn-greys" >   
-                        </div>
-                        <div class="col-md-6 "> 
-                            <label for="spos" class="col-12 mb-2"> spos firtname </label>
-                            <input id="spos_first" name="spos" class=" spos col-12 mb-2 form-control btn-greys" >   
+                    <div id="form_3" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
+                        <div class="row g-3"> 
+                            <h1>  Reference information </h1>
+                            <div class="col-md-6 "> 
+                                <label for="moms" class="col-12 mb-2"> mother's fullname </label>
+                                <input id="moms" name="moms" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="pops" class="col-12 mb-2"> fother's fullname </label>
+                                <input id="pops" name="pops" class="col-12 mb-2 form-control btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="spos" class="col-12 mb-2"> spos firtname </label>
+                                <input id="spos_last" name="spos" class=" spos col-12 mb-2 form-control btn-greys" >   
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="spos" class="col-12 mb-2"> spos firtname </label>
+                                <input id="spos_first" name="spos" class=" spos col-12 mb-2 form-control btn-greys" >   
+                            </div>
                         </div>
                         
                         
                         
             
                     </div>
+                    <div id="form_4" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
+                        <div class="row g-3"> 
+                            <h1>  Address Field </h1>
+                            <div class="row" id="form_4_row">  
+                                <div class="col-md-4">                                       
+                                    <!-- <i class="fa fa-life-saver
+                                        aria-hidden="true"></i> -->
+                                        <label for="provc_select"> Province select </label>
+                                        <select class="form-select form-select-sm  btn-greys" id="provc_select" aria-label="Small select example">
+                                            
+                                        </select> 
+                                </div>                                    
+                                <div class="col-md-4">                                    
+                                    <label for="region_district"> region distric </label>
+                                    <select class="form-select form-select-sm col-md-3 btn-greys" id="region_district" aria-label="Small select example"> 
+                                        <!-- hhehe -->
+                                        <!-- <option value=""></option> -->
+                                    </select> 
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="municipal"> Municipality</label>
+                                    <select class="form-select form-select-sm col-6 btn-greys" id="municipal" aria-label="Small select example"> 
+                                        <!-- hhehe -->
+                                        <!-- <option value=""></option> --> 
+                                        
+                                        
+                                    </select> 
+                                    
+                                </div>
+                                                   
+                            </div>
+
+                            <div class="col-md-6 "> 
+                                <label for="brgy" class="col-12 mb-2">  Barangay</label>
+                                <input id="brgy" name="brgy" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="brgy" class="col-12 mb-2"> Barangay </label>
+                                <input id="brgy" name="brgy" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            
+
+
+
+
+                        </div>
+
+      
+                    </div>
+
+                    <div id="form_5" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
+                        <div class="row g-3">
+                            <h3>  Do you live in aparment building or condo? </h3>
+
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="condo" id="no" autocomplete="off"  value="no" onchange="getValue()"> 
+                                <label class="btn btn-outline-secondary  col-12"  for="no"> no 
+                                </label>
+                            </div>     
+                            <div class="col-6"> 
+                                <input type="radio" class="btn-check" name="condo" id="yes" autocomplete="off"  value="yes" onchange="getValue()"> 
+                                <label class="btn btn-outline-secondary col-12"  for="yes"> yes 
+                                </label>
+                            </div>    
+                        </div>
+                        
+                    </div>
+
+                    
+                    <div id="form_5" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
+
+                        <div class="row g-3"> 
+                            
+                        </div>
+                    </div>
+                    
+
                         
                 </form>
             </div>
@@ -124,6 +203,7 @@
 
 
     <script src="src/mainss.js"></script>
+    <script src="src/fetch_two.js"></script>
             
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 
 section#block_1 {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgb(228, 235, 238);
 }
 
@@ -47,5 +47,11 @@ section#block_1 {
 .btn-outline-secondary {
     border:  none ;
 }
+
+
+#form_4_row * {
+    /* border: 1px dashed goldenrod; */
+}
+
 
 
