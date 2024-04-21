@@ -1,0 +1,68 @@
+
+
+section#block_1 {
+    /* height: 100vh; */
+    background-color: rgb(228, 235, 238);
+}
+
+#side_design { 
+    background: #ffffff url(/web_projects/src/image-src/blurry-gradient-haikei.png) center center/cover no-repeat;    
+    border-radius: 2em;
+}
+
+
+.sub-card {
+    background-color:  white ;
+    /* border-radius: 1em; */
+    border-radius: 2em;
+
+    
+}
+
+.container * {
+    /* border: 1px dashed green; */
+}
+
+
+.btn-greys {
+    
+    
+    /* background-color:  rgba(195, 202, 202, 0.521) ; */
+    background-color:  rgba(233, 243, 243, 0.521) ;
+    outline: none ;
+    border-radius: 0.4em;
+    border: none;
+}
+
+.tin_control {
+    background-color:  rgba(233, 243, 243, 0.521) ;
+    /* background-color:  rgba(217, 226, 226, 0.521) ; */
+    outline: none ;
+    border-radius: 0.4em;
+    border: none; 
+    
+}
+
+
+.btn-outline-secondary {
+    border:  none ;
+}
+
+
+#form_4_row * {
+    /* border: 1px dashed goldenrod; */
+}
+
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.no-spinner[type=number] {
+    -moz-appearance: textfield;
+}
+
+

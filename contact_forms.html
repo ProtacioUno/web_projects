@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="src/contact_form-222.css"> 
+    
+    <title> NEW </title>
+</head>
+<body>
+    <section id="block_1">
+        <div id="sub" class="container">   
+            <div class="row"> 
+                
+            
+            <div id="side_design" class="col-md-3">
+                 <!-- <h1>hephpe </h1> -->
+                
+            </div>
+            <div  class="col-md-9"> 
+
+                <form class="p-md-5" method="POST" action="">
+                    <h1> Information</h1>
+                    <div id="form_1" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
+                        
+                        <h2>  Personal Information </h2>
+                        <div class="col-md-4 "> 
+                            <label for="last" class="col-12 mb-2"> Last name </label>
+                            <input id="last" name="last" class="col-12 mb-2 form-control  btn-greys" >  
+                        </div>
+                        <div class="col-md-4 "> 
+                            <label for="first" class="col-12 mb-2"> first name </label>
+                            <input id="first" name="first" class="col-12 mb-2 form-control  btn-greys" >  
+                        </div>
+                        <div class="col-md-4 "> 
+                            <label for="middle" class="col-12 mb-2"> middle name </label>
+                            <input id="middle" name="middle" class="col-12 mb-2 form-control  btn-greys" >  
+                        </div>
+                        
+
+                     
+                        <!-- <div class="col-12">  -->
+                            <label for="tin" class="col-md-3"> TIN number </label>     
+                            <div class="col-md-9 row m-0">
+                                <input type="number" name="tin_01" class=" tin_control no-spinner col-3 p-2 "  
+                                oninput="validateNumberInput(this)">
+                                <input type="number" name="tin_01" class=" tin_control no-spinner col-3 p-2 "  
+                                oninput="validateNumberInput(this)">
+                                <input type="number" name="tin_01" class=" tin_control no-spinner col-3 p-2 "  
+                                oninput="validateNumberInput(this)">
+                                
+                            </div>
+                        
+        
+                       
+                        <div class="col-md-6"> 
+                            <label for="contact" class="col-12 mb-2"> Contact number </label>
+                            <input id="contact" name="contact" class="col-12 mb-2 form-control btn-greys" >  
+                        </div>
+                        <div class="col-md-6"> 
+                            <label for="email" class="col-12 mb-2"> email number </label>
+                            <input id="email" name="email" class="col-12 mb-2 form-control btn-greys" >  
+                        </div>
+
+                        
+                        
+                         
+                    </div>
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="cleck()"> -->
+                   
+
+
+                    <div id="form_2" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
+                        <div class="row g-3">
+                            <h2> Civil Status </h2>
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="status" id="single" autocomplete="off"  value="single" onchange="getValue()"> 
+                                <label class="btn btn-outline-secondary col-12"  for="single"> Single 
+                                </label>
+                            </div>      
+                            <div class="col-6">                                     
+                                <input type="radio" class="btn-check" name="status" id="married" autocomplete="off" value="married" onchange="getValue()" >
+                                <label class="btn btn-outline-secondary col-12" for="married"> Married
+
+                                </label>
+                            </div> 
+                            <div class="col-6">                                    
+                                <input type="radio" class="btn-check" name="status" id="divorce" autocomplete="off" value="divorse" onchange="getValue()">
+                                <label class="btn btn-outline-secondary col-12" id="divorce" for="divorce" > Divorced </label>
+                            </div>
+                                                    
+                            <div class="col-6">                                    
+                                <input type="radio" class="btn-check" name="status" id="widowed" autocomplete="off"  value="widowed" onchange="getValue()"> 
+                                <label class="btn btn-outline-secondary col-12" for="widowed"> Widowed </label>
+                            </div>
+                            <div class="col-6">                                    
+                                <input type="radio" class="btn-check" name="status" id="seperated" autocomplete="off" value="seperated" onchange="getValue()">
+                                <label class="btn btn-outline-secondary col-12" for="seperated"> Seperatedd </label>
+                            </div>                                             
+                        </div> 
+                    </div>
+
+                        <!-- checshit -->
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_02()"> -->
+
+
+                    <div id="form_3" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
+                        <div class="row g-3"> 
+                            <h2>  Reference information </h2>
+                            <div class="col-md-6 "> 
+                                <label for="moms_last" class="col-12 mb-2"> mother's maiden name </label>
+                                <input id="moms_last" name="moms_last" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="moms_first" class="col-12 mb-2"> mother's given name </label>
+                                <input id="moms_first" name="moms_first" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="pops_last" class="col-12 mb-2"> father's lastname</label>
+                                <input id="pops_last" name="pops_last" class="col-12 mb-2 form-control btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="pops_last" class="col-12 mb-2"> father's Givenname </label>
+                                <input id="pops_last" name="pops_last" class="col-12 mb-2 form-control btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="spos" class="col-12 mb-2"> spos firtname </label>
+                                <input id="spos_last" name="spos_last" class=" spos col-12 mb-2 form-control btn-greys" >   
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="spos" class="col-12 mb-2"> spos givename </label>
+                                <input id="spos_first" name="spos_first" class=" spos col-12 mb-2 form-control btn-greys" >   
+                            </div>
+                        </div>
+                        
+                        
+                        
+            
+                    </div>
+
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_03()"> -->
+
+                    <div id="form_4" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" > 
+                        <div class="row g-3"> 
+                            <h2>  Address Field </h2>
+                            <div class="row" id="form_4_row">  
+                                <div class="col-md-4">                                       
+                                    <!-- <i class="fa fa-life-saver
+                                        aria-hidden="true"></i> -->
+                                        <label for="provc_select"> Province select </label>
+                                        <select class="form-select form-select-sm  btn-greys" 
+                                        name="provc_select"
+                                        id="provc_select" aria-label="Small select example">
+                                            
+                                        </select> 
+                                </div>                                    
+                                <div class="col-md-4">                                    
+                                    <label for="region_district"> region distric </label>
+                                    <select class="form-select form-select-sm col-md-3 btn-greys" id="region_district" name="region_district" aria-label="Small select example"> 
+                                        <!-- hhehe -->
+                                        <!-- <option value=""></option> -->
+                                    </select> 
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="municipal"> Municipality</label>
+                                    <select class="form-select form-select-sm col-6 btn-greys" id="municipal" name="municipal" aria-label="Small select example"> 
+                                        <!-- hhehe -->
+                                        <!-- <option value=""></option> --> 
+                                        
+                                        
+                                    </select> 
+                                    
+                                </div>
+                                                   
+                            </div>
+
+                            <div class="col-md-6 "> 
+                                <label for="brgy" class="col-12 mb-2">  Barangay</label>
+                                <input id="brgy" name="brgy" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="town_distric" class="col-12 mb-2"> Town/district </label>
+                                <input id="town_distric" name="town_distric" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="subvil" class="col-12 mb-2"> Subdivizion/Village/Zone Barangay</label>
+                                <input id="subvil" name="subvil" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="street" class="col-12 mb-2"> Street Name </label>
+                                <input id="street" name="street" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="blk" class="col-12 mb-2"> Lot/Block/Phase/Phase no </label>
+                                <input id="blk" name="blk" class=" col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            
+                        </div>
+
+      
+                    </div>
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_04()"> -->
+
+
+                    <div id="form_5" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
+                        <div class="row g-3">
+                            <h3>  Do you live in aparment building or condo? </h3>
+
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="condo" id="no" autocomplete="off"  value="no" onchange="condog()"> 
+                                <label class="btn btn-outline-secondary  col-12"  for="no"> No
+                                </label>
+                            </div>     
+                            <div class="col-6"> 
+                                <input type="radio" class="btn-check" name="condo" id="yes" autocomplete="off"  value="yes" onchange="condog()"> 
+                                <label class="btn btn-outline-secondary col-12"  for="yes"> Yes
+                                </label>
+                            </div>    
+                        </div>
+                        
+                    </div>
+
+                    <!-- <input type="button" name="submit"  value="Submit" class="col-2 sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder" 
+                    onclick="onclek_05()"> -->
+
+                    
+                    <div id="form_6" class="row sub-card p-md-4 p-sm-3 p-2 mt-3" >
+
+                        <div class="row g-3"> 
+                            <h2>  Building info </h2>
+                            <div class="col-md-6"> 
+                                <label for="build_name" class="col-12 mb-2">   Building Name/Apartment name</label>
+                                <input id="build_name" name="build_name" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            <div class="col-md-6 "> 
+                                <label for="unit" class="col-12 mb-2">   Unit/Room/Floor/Building no.  </label>
+                                <input id="unit" name="unit" class="col-12 mb-2 form-control  btn-greys" >  
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+
+                    <!-- <div  class="col-md-2 col-5 sub-card p-md-4 p-sm-3 p-2 mt-3" >  -->
+                    <input type="button" name="submit"  value="Submit" class="sub-card p-md-4 p-sm-3 p-2 mt-3 fw-bolder">
+
+                    <!-- </div> -->
+
+
+                        
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="src/mainss.js"></script>
+    <script src="src/fetch_two.js"></script>
+    <script src="src/check_value.js"></script>
+    
+            
+</body>
+</html>

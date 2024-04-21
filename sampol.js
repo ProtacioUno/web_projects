@@ -90,16 +90,13 @@ fetch('sampol.json').then(response => response.json()).then(data=> {
         console.log("Data key" , data_key)
         data_key.forEach((data_keyxx , xx)=> {
             if(enpot == data_keyxx){
-                                                
                 // console.log(data_key)  
                 console.log( "data_keyxx", data_keyxx)           
-                                      
-                
+                                                      
                 // console.log(data_val) 
                 // console.log(data_val[xx]) 
                 let data_selectname = data_val[xx] ; 
-                
-                
+                                
                 // console.log(data_selectname.color) 
                 object_color(data_selectname)
                 let sampol = data_selectname.color ;
