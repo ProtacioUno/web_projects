@@ -1,0 +1,54 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #cef0f4;
+    --sidebar-color: #FFF;
+    /* --primary-color: #695CFE;
+     */
+    --primary-color: rgb(61, 152, 164) ; 
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+
+.active_a {
+    background-color: rgb(46, 187, 175) ;
+    color: white;
+        
+}
+
+/* .nav-text { 
+    color:  white;
+} */
+
+.btn-outline-secondary {
+    border:  none;
+    border-radius: 10px;
+    
+}
+
+.menu-links {
+    padding: 0 ;
+}
+
+.neww {
+    color:  green;
+    display: flex;
+}
+ 
+
+.sidebar li .activated_nav {
+    background-color:  var(--primary-color);  
+    /* color: white ; */
+     
+}
+
+.sidebar li .activated_nav span , .sidebar li .activated_nav i  {
+    color: white;
+}
